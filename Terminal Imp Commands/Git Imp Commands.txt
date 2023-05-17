@@ -1,0 +1,50 @@
+Git Imp Commands :-
+
+git init  => for initializing git in your Dir **  
+
+git status  => for getting git status
+
+git add <file>  =>  for adding the file to the staging area which would be committed
+
+git add .  =>  for adding All the file to the Staging area for committing **
+
+git rm --cached <fileName>  => for removing this file from Staging area
+
+git rm --cached -r .   => for removing All the file from Staging area
+
+git commit -m "<commit message>"  => for committing using git **	
+
+git log  =>  for checking committed details
+
+git diff <file>  =>  for checking difference between last committed version and currently saved version of file
+
+git checkout <file>  =>  to rollback this file to the last version that was committed using git 
+
+git remote add origin <github repo link> => to create remote repositories **
+
+git branch -M main  =>  to select main branch for pushing the commits **
+
+git push -u origin main  => publish the Local-repository to the Remote-repository named 'origin' on Github **
+
+(here name of remote is 'origin' & name of branch is 'main' )
+
+git branch <branch-name>  => for creating a new branch
+
+git branch  => for checking currently working branch
+
+git checkout <new-branch>  =>  for changing working branch from <prev-branch> to <new-branch>
+
+
+ # Cloning Repositories from GitHub :-
+
+ git clone <github repo link>.git  => to clone git repo in your local device
+
+ ## To Clone a Specific Branch :-
+ 1.) Clone the repository, fetch all branches, and Directly checkout to a specific branch :- 
+ git clone --branch <branchname> <remote-repo-url>
+
+ 2.) Clone the repository and fetch only a single branch :- (not much Relevant)
+ git clone --branch <branchname> --single-branch <remote-repo-url>
+
+
+

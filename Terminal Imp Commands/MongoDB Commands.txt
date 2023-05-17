@@ -1,0 +1,35 @@
+mongosh --version
+
+show dbs  => to show all mongoDB data bases running on sysytem
+
+db  =>  to show the db in which we are currently working
+
+use <new db name>  =>  to create new db
+
+db.<collection-name>.insertOne()   => to create a new collections in that db
+
+show collections   => to view all the collections of the current db
+
+db.<collection-name>.find()  => for finding data inside that collection
+
+db.<collection-name>.find({name: "Manthan Kumar"})  =>  for finding data with particular queries
+
+db.dropDatabase()  => to delete the selected database
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

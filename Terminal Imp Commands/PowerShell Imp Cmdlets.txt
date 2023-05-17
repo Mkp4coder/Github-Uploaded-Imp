@@ -1,0 +1,134 @@
+MK_Powershell Cmdlets (Command-Lets) :--->
+
+# Imp PowerShell Cmdlets :-
+
+start <fileName/folderName> => to open a File/Folder from Terminal
+
+new-item <fileName>  => To Create a new file
+=> e.g.->
+new-item mkp.txt
+(or)
+type null > <fileName> => To Create a new File
+=> e.g.->
+type null > mkp.txt
+
+del/rm <fileName> => To Delete (or Remove) a file
+=> e.g.->
+del mkp.txt
+
+del -force <fileName>  => To forcefully Delete a file (Shift + Del)
+=> e.g.->
+del mkp.txt
+
+get-content <fileName>  => get content of the file in the Terminal
+=> e.g.->
+get-content mkp.txt
+
+md/mkdir <folderName>  => To Create a Folder
+=> e.g.->
+md mkFolder
+
+del/rmdir <folderName>  => To Delete a Folder
+=> e.g.->
+del mkFolder
+
+del <file-1/folder-1>, <file-2/folder-2>  -> To Delete multiple files or Folders at once
+=> e.g.->
+del mkp1.txt, mkp2.txt    => Delete multiple files
+del mkFolder1, mkFolder2  => Delete multiple folders
+
+copy <file-1> <other_Directory>  -> Copy the File to new/same dir
+=> e.g.->
+copy mkp1.txt mkp2.txt             => copy file to same Dir but with diffr Name
+copy mkp1.txt mkFolder/mkp1.txt    => copy file to mkFolder/ Dir with same Name
+
+xcopy <file-1> <latest_Directory>  -> Copy the File to new Dir which doesn't exist earlier
+=> e.g.->
+xcopy mkp1.txt mkNewFolder    => copy file to the new mkNewFolder/ dir, mkNewFolder will be just created
+
+move <oldName> <new_Directory>  -> Move old File/Folder to new one
+=> e.g.->
+move mkp1.txt mkFolder    => move file to mkFolder/ dir 
+move mkFolder1 mkFolder2 => move folder to mkFolder2/ dir 
+
+move <oldName> <newName>  -> To Rename File or Folder Name
+=> e.g.->
+move mkp1.txt mkp2.txt   
+move mkFolder1 mkFolder2
+
+cd <path> => for changing directory to a specific path
+
+cd.. => for going one step back in directory-path
+
+cd / => for completely going back to the root directory
+
+ls/dir <folderName> => to list all the directories in the folder
+ls/dir             => to list all the directories in the current folder
+
+ls -hidden <folderName>  => to list all the Hidden directories in the folder
+ls -hidden              => to list all the Hidden directories in the current folder
+
+test-path <fileName>  => To check existence of a folder or file
+=> e.g.->
+test-path mkp.txt
+test-path mkFolder
+
+cls/clear  => for clearing the Terminal screen
+
+pwd   =>  for checking current location of directory
+
+npm init  =>  to initialize npm package and create package.json file
+
+ctrl + c  =>  for returning to home directory during any running commands
+
+#
+#
+## Not so Imp CMDLETS :-
+
+dir | ft  =>  for filter current dir items
+
+xcopy <file1> <newFolder> =>  for eXtreme copying operations
+
+=> copy will not copy the file if the entire directory structure for the destination doesn't already exist. 
+=> xcopy will automatically create all needed directories.
+
+<softwareName> --version  or <softwareName> -v  =>  for Checking Version of that software installed in your system
+e.g.->
+node -v
+npm -v
+
+##
+
+###
+
+# Some Extra CMDLETS for Admin Configuration of your Sysytem => 
+#
+# Getting all Information about your System :-
+systeminfo => for getting detailed system information
+winver     => for getting windows version
+hostname   => for name of the System
+msinfo32   => for getting system information
+chkdsk     => for scanning and checking disks
+wmic -> cpu => for getting cpu info
+wmic bios get smbiosbiosversion => for getting version of BIOS
+wmic -> wmic:root\cli> output: C:\users\mksou\desktop\info.txt product get name, version
+getmac     => for getting Physical address(mac address)
+* diskpart -> list disk -> select disk 0 -> detail disk => for getting harddrive information
+
+#
+# Networking cmdlets :-
+ipconfig   =>  to get Windows IP Configuration
+Get-NetIPAddress  =>  to get net IP Address of System
+Get-NetIPConfiguration  =>  to get net Windows IP Configuration
+Resolve-DnsName www.<website-Name>.com  =>  to get IP address of any website
+
+#
+# Manging Tasks and Services :-
+tasklist - to get the list of currently running tasks
+taskkill /pid 1234 - to kill any task
+net start
+net stop
+Get-Process
+Stop-Process
+Get-History, History, H, Invoke-History
+

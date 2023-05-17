@@ -1,0 +1,62 @@
+# Shortcuts & Commands for Hyper Terminal :-
+
+
+ 
+ls -> to list all the directories in the selected folder
+
+ls -a  => to list all the Hidden directories in the selected folder
+
+cd <path> => for changing directory to a specific path
+
+cd..  => for going back one step in directory-path
+
+cd / => for completely going back to root directory 
+
+npm init  -> to initialize npm package and create package.json file
+
+start <fileName>  => to open file from Terminal
+
+cp <old> <new>    -> Copy old to new
+mv <old> <new>   -> Move old to new
+
+mv <old_FileName> <new_FileName>    ->  To Rename file name
+
+type null > <file>   -> To create File
+rm <file>        -> To remove (delete) File  
+
+mkdir  -> To create Folder
+rmdir  ->  To delete Folder 
+
+clear   -> To clear the screen
+
+To exit form Node :-
+.exit 
+  or 
+click ctrl+c  two times
+
+REPL - Read Evaluation Print Loop
+
+Ctrl + A  -> To reach starting of that line
+Ctrl + E  -> To reach end of that line
+Ctrl + U  -> To delete that line
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
